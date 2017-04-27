@@ -8,8 +8,9 @@ namespace Lab_12
 {
     abstract class Player
     {
-        private string name;
-        protected enum roshambo {rock, paper, scissors};
+        private string name; //All players will have a name.
+        protected enum roshambo {rock, paper, scissors}; //Declares an enum with the options "rock", "paper", or "scissors".
+
         public string Name
         {
             get
@@ -21,7 +22,8 @@ namespace Lab_12
                 name = value;
             }
         }
-        public abstract Enum GenerateRoshambo();
+
+        public abstract Enum GenerateRoshambo(); //Creates an abstract method so that other classes can use a different GenerateRoshambo method.
 
 
     }

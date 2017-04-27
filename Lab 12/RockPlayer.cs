@@ -10,11 +10,11 @@ namespace Lab_12
     {
         public RockPlayer()
         {
-            Name = "Rocky";
+            Name = "Rocky"; //Set RockPlayer's name to Rocky when a new RockPlayer object is created
         }
         public override Enum GenerateRoshambo()
         {
-            return roshambo.rock;
+            return roshambo.rock; //RockPlayer always returns Rock.
         }
     }
 }
